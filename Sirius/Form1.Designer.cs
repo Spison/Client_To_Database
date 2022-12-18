@@ -52,17 +52,18 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 70);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(687, 150);
+            this.dataGridView1.RowHeadersWidth = 20;
+            this.dataGridView1.Size = new System.Drawing.Size(583, 180);
             this.dataGridView1.TabIndex = 0;
             // 
             // buttonRefresh
             // 
             this.buttonRefresh.BackgroundImage = global::Sirius.Properties.Resources.refresh_update_icon_142975;
             this.buttonRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonRefresh.Location = new System.Drawing.Point(684, 24);
+            this.buttonRefresh.Location = new System.Drawing.Point(555, 6);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(40, 40);
             this.buttonRefresh.TabIndex = 1;
@@ -71,16 +72,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(37, 35);
+            this.textBox1.Location = new System.Drawing.Point(12, 17);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(588, 20);
+            this.textBox1.Size = new System.Drawing.Size(491, 20);
             this.textBox1.TabIndex = 2;
             // 
             // buttonSearch
             // 
             this.buttonSearch.BackgroundImage = global::Sirius.Properties.Resources.search_icon;
             this.buttonSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonSearch.Location = new System.Drawing.Point(638, 24);
+            this.buttonSearch.Location = new System.Drawing.Point(509, 6);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(40, 40);
             this.buttonSearch.TabIndex = 3;
@@ -92,7 +93,7 @@
             this.listBox_Status.DataSource = this.statusBindingSource;
             this.listBox_Status.DisplayMember = "name";
             this.listBox_Status.FormattingEnabled = true;
-            this.listBox_Status.Location = new System.Drawing.Point(37, 256);
+            this.listBox_Status.Location = new System.Drawing.Point(12, 238);
             this.listBox_Status.Name = "listBox_Status";
             this.listBox_Status.Size = new System.Drawing.Size(120, 30);
             this.listBox_Status.TabIndex = 4;
@@ -116,7 +117,7 @@
             "(нет)",
             "Принятые",
             "Уволенные"});
-            this.listBox_EmployOrUnemploy.Location = new System.Drawing.Point(37, 292);
+            this.listBox_EmployOrUnemploy.Location = new System.Drawing.Point(12, 274);
             this.listBox_EmployOrUnemploy.Name = "listBox_EmployOrUnemploy";
             this.listBox_EmployOrUnemploy.Size = new System.Drawing.Size(120, 43);
             this.listBox_EmployOrUnemploy.TabIndex = 5;
@@ -124,21 +125,21 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(183, 289);
+            this.dateTimePicker1.Location = new System.Drawing.Point(158, 271);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(425, 289);
+            this.dateTimePicker2.Location = new System.Drawing.Point(395, 271);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 7;
             // 
             // button_StatisticOfEmploy
             // 
-            this.button_StatisticOfEmploy.Location = new System.Drawing.Point(342, 315);
+            this.button_StatisticOfEmploy.Location = new System.Drawing.Point(309, 297);
             this.button_StatisticOfEmploy.Name = "button_StatisticOfEmploy";
             this.button_StatisticOfEmploy.Size = new System.Drawing.Size(127, 23);
             this.button_StatisticOfEmploy.TabIndex = 8;
@@ -153,17 +154,18 @@
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
-            this.labelStatus.Location = new System.Drawing.Point(183, 256);
+            this.labelStatus.Location = new System.Drawing.Point(158, 238);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(35, 13);
             this.labelStatus.TabIndex = 9;
             this.labelStatus.Text = "label1";
+            this.labelStatus.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(606, 325);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.button_StatisticOfEmploy);
             this.Controls.Add(this.dateTimePicker2);
@@ -175,7 +177,7 @@
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Клиент для просмотра данных о сотрудниках от Канаш А.В.";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).EndInit();
